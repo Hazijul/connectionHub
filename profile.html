@@ -85,7 +85,7 @@
                             </div>
                             <div class="post-content">
                                 <p>Beautiful sunset at the beach! 🌅</p>
-                                <img src="https://via.placeholder.com/400x300" alt="Post Image">
+                                <img src="sunset.sm.jpg" alt="Post Image">
                             </div>
                             <div class="post-actions">
                                 <button><i class="fas fa-heart"></i> 1.2K</button>
@@ -99,89 +99,39 @@
 
                 <!-- Shorts Section -->
                 <div id="shorts" class="tab-pane">
-                    <div class="create-short">
-                        <button class="btn-primary" id="createShortBtn">
-                            <i class="fas fa-plus"></i>
-                            Create New Short
-                        </button>
-                    </div>
                     <div class="shorts-grid">
                         <!-- Sample Shorts -->
                         <div class="short-card">
-                            <div class="short-preview">
-                                <video src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-neon-sign-1232-large.mp4" poster="https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=500&fit=crop"></video>
-                                <div class="short-overlay">
-                                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                            <video src="travel.blogvideo.mp4" alt= " shorts fa-video" autoplay muted></video>
+                            <div class="short-info">
+                                <h4>My Travel Vlog</h4>
+                                <div class="short-stats">
+                                    <span><i class="fas fa-eye"></i> 100K</span>
+                                    <span><i class="fas fa-heart"></i> 2.5K</span>
                                 </div>
                             </div>
+                        </div>
+                        <!-- More shorts will be dynamically added here -->
+                         <div class="short-card">
+                            <video src="travel.blogvideo2.mp4" alt= " shorts fa-video" autoplay muted></video>
                             <div class="short-info">
-                                <h4>Tech Review: Latest Gadgets</h4>
+                                <h4>My Travel Vlog</h4>
                                 <div class="short-stats">
                                     <span><i class="fas fa-eye"></i> 10K</span>
-                                    <span><i class="fas fa-heart"></i> 2.5K</span>
-                                    <span><i class="fas fa-comment"></i> 156</span>
-                                </div>
-                                <div class="short-actions">
-                                    <button class="edit-short"><i class="fas fa-edit"></i></button>
-                                    <button class="delete-short"><i class="fas fa-trash"></i></button>
+                                    <span><i class="fas fa-heart"></i> 28.5K</span>
                                 </div>
                             </div>
                         </div>
-
                         <div class="short-card">
-                            <div class="short-preview">
-                                <video src="https://assets.mixkit.co/videos/preview/mixkit-tree-with-yellow-flowers-1173-large.mp4" poster="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=300&h=500&fit=crop"></video>
-                                <div class="short-overlay">
-                                    <button class="play-btn"><i class="fas fa-play"></i></button>
-                                </div>
-                            </div>
+                            <video src="travel.blogvideo3.mp4" alt= " shorts fa-video" autoplay muted></video>
                             <div class="short-info">
-                                <h4>Travel Vlog: Beach Day</h4>
+                                <h4>My Travel Vlog</h4>
                                 <div class="short-stats">
-                                    <span><i class="fas fa-eye"></i> 15K</span>
-                                    <span><i class="fas fa-heart"></i> 3.2K</span>
-                                    <span><i class="fas fa-comment"></i> 234</span>
-                                </div>
-                                <div class="short-actions">
-                                    <button class="edit-short"><i class="fas fa-edit"></i></button>
-                                    <button class="delete-short"><i class="fas fa-trash"></i></button>
+                                    <span><i class="fas fa-eye"></i> 190K</span>
+                                    <span><i class="fas fa-heart"></i> 92.5K</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Create Short Modal -->
-                <div class="modal" id="createShortModal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Create New Short</h2>
-                            <button class="close-modal"><i class="fas fa-times"></i></button>
-                        </div>
-                        <form class="short-form">
-                            <div class="form-group">
-                                <label for="shortTitle">Title</label>
-                                <input type="text" id="shortTitle" placeholder="Enter your short title" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="shortVideo">Video</label>
-                                <input type="file" id="shortVideo" accept="video/*" required>
-                                <div class="video-preview"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="shortThumbnail">Thumbnail</label>
-                                <input type="file" id="shortThumbnail" accept="image/*" required>
-                                <div class="thumbnail-preview"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="shortDescription">Description</label>
-                                <textarea id="shortDescription" rows="3" placeholder="Add a description to your short..."></textarea>
-                            </div>
-                            <div class="form-actions">
-                                <button type="button" class="btn-secondary">Save as Draft</button>
-                                <button type="submit" class="btn-primary">Publish</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
 
@@ -190,12 +140,66 @@
                     <div class="connections-grid">
                         <!-- Sample Connections -->
                         <div class="connection-card">
-                            <img src="https://via.placeholder.com/100" alt="Connection" class="profile-pic">
+                            <img src="connection.jpg" alt="Connection" class="profile-pic">
                             <h4>Jane Smith</h4>
                             <p>Photographer</p>
                             <button class="btn-secondary">Message</button>
                         </div>
                         <!-- More connections will be dynamically added here -->
+                         <div class="connection-card">
+                            <img src="connection.pic2.jpg" alt="Connection" class="profile-pic">
+                            <h4>John Smith</h4>
+                            <p>Photographer</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="connection.pic3.jpg" alt="Connection" class="profile-pic">
+                            <h4>James Smith</h4>
+                            <p>student</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="connection.pic4.jpg" alt="Connection" class="profile-pic">
+                            <h4>zey Smith</h4>
+                            <p>student</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="fconnection.pic1.jpg" alt="Connection" class="profile-pic">
+                            <h4>Rey Smith</h4>
+                            <p>student</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="connection.pic5.jpg" alt="Connection" class="profile-pic">
+                            <h4> Han Smith</h4>
+                            <p>student </p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="fconnection.pic2.jpg" alt="Connection" class="profile-pic">
+                            <h4>lia Smith</h4>
+                            <p>student</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="connection.pic6.jpg" alt="Connection" class="profile-pic">
+                            <h4>kylo Smith</h4>
+                            <p>student</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="fconnection.pic3.jpg" alt="Connection" class="profile-pic">
+                            <h4>lexi Smith</h4>
+                            <p>student</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
+                        <div class="connection-card">
+                            <img src="fconnection.pic4.jpg" alt="Connection" class="profile-pic">
+                            <h4> Max Smith</h4>
+                            <p>student</p>
+                            <button class="btn-secondary">Message</button>
+                        </div>
                     </div>
                 </div>
             </div>
