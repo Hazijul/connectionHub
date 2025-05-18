@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - ConnectHub</title>
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>ConnectHub.</h1>
+        </div>
+        <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="shorts.html"><i class="fas fa-video"></i> Shorts</a>
+            <a href="blogs.html"><i class="fas fa-blog"></i> Blogs</a>
+            <a href="messages.html"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="settings.html" class="active"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" title="Toggle Theme">
+                <i class="fas fa-sun theme-icon"></i>
+            </button>
+            <div class="nav-profile">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="John Doe" class="profile-pic">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Settings Container -->
+    <div class="settings-container">
+        <!-- Settings Sidebar -->
+        <div class="settings-sidebar">
+            <div class="settings-nav">
+                <button class="settings-nav-item active" data-section="account">
+                    <i class="fas fa-user-circle"></i>
+                    Account Settings
+                </button>
+                <button class="settings-nav-item" data-section="privacy">
+                    <i class="fas fa-shield-alt"></i>
+                    Privacy & Security
+                </button>
+                <button class="settings-nav-item" data-section="notifications">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                </button>
+                <button class="settings-nav-item" data-section="appearance">
+                    <i class="fas fa-paint-brush"></i>
+                    Appearance
+                </button>
+                <button class="settings-nav-item" data-section="language">
+                    <i class="fas fa-language"></i>
+                    Language & Region
+                </button>
+                <button class="settings-nav-item" data-section="connected">
+                    <i class="fas fa-link"></i>
+                    Connected Accounts
+                </button>
+                <button class="settings-nav-item" data-section="billing">
+                    <i class="fas fa-credit-card"></i>
+                    Billing & Subscription
+                </button>
+            </div>
+        </div>
+
+        <!-- Settings Content -->
+        <div class="settings-content">
+            <!-- Account Settings Section -->
+            <section class="settings-section active" id="account">
+                <h2>Account Settings</h2>
+                <div class="settings-card">
+                    <div class="profile-settings">
+                        <div class="profile-picture">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Profile Picture">
+                            <button class="change-picture-btn">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        <div class="profile-info">
+                            <div class="form-group">
+                                <label>Display Name</label>
+                                <input type="text" value="John Doe" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" value="@johndoe" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" value="john.doe@example.com" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Bio</label>
+                                <textarea class="form-control" rows="3">Digital creator and tech enthusiast</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-actions">
+                        <button class="btn-primary">Save Changes</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Privacy & Security Section -->
+            <section class="settings-section" id="privacy">
+                <h2>Privacy & Security</h2>
+                <div class="settings-card">
+                    <div class="privacy-settings">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Profile Visibility</h3>
+                                <p>Control who can see your profile and content</p>
+                            </div>
+                            <select class="form-control">
+                                <option>Public</option>
+                                <option>Friends Only</option>
+                                <option>Private</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Two-Factor Authentication</h3>
+                                <p>Add an extra layer of security to your account</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Activity Status</h3>
+                                <p>Show when you're active on ConnectHub</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Notifications Section -->
+            <section class="settings-section" id="notifications">
+                <h2>Notification Preferences</h2>
+                <div class="settings-card">
+                    <div class="notification-settings">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Push Notifications</h3>
+                                <p>Receive notifications on your device</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h3>Email Notifications</h3>
+                                <p>Receive notifications via email</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="notification-types">
+                            <h3>Notification Types</h3>
+                            <div class="checkbox-group">
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>New Followers</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Comments</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Likes</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>Messages</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Appearance Section -->
+            <section class="settings-section" id="appearance">
+                <h2>Appearance Settings</h2>
+                <div class="settings-card">
+                    <div class="appearance-settings">
+                        <div class="theme-selector">
+                            <h3>Theme</h3>
+                            <div class="theme-options">
+                                <button class="theme-option active" data-theme="light">
+                                    <i class="fas fa-sun"></i>
+                                    Light
+                                </button>
+                                <button class="theme-option" data-theme="dark">
+                                    <i class="fas fa-moon"></i>
+                                    Dark
+                                </button>
+                                <button class="theme-option" data-theme="system">
+                                    <i class="fas fa-desktop"></i>
+                                    System
+                                </button>
+                            </div>
+                        </div>
+                        <div class="color-scheme">
+                            <h3>Color Scheme</h3>
+                            <div class="color-options">
+                                <button class="color-option active" style="--color: #4a90e2"></button>
+                                <button class="color-option" style="--color: #50c878"></button>
+                                <button class="color-option" style="--color: #e74c3c"></button>
+                                <button class="color-option" style="--color: #9b59b6"></button>
+                                <button class="color-option" style="--color: #f1c40f"></button>
+                            </div>
+                        </div>
+                        <div class="font-size">
+                            <h3>Font Size</h3>
+                            <div class="font-size-slider">
+                                <span>A</span>
+                                <input type="range" min="1" max="5" value="3">
+                                <span>A</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Language & Region Section -->
+            <section class="settings-section" id="language">
+                <h2>Language & Region</h2>
+                <div class="settings-card">
+                    <div class="language-settings">
+                        <div class="form-group">
+                            <label>Language</label>
+                            <select class="form-control">
+                                <option>English (US)</option>
+                                <option>Español</option>
+                                <option>Français</option>
+                                <option>Deutsch</option>
+                                <option>中文</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Time Zone</label>
+                            <select class="form-control">
+                                <option>(GMT-08:00) Pacific Time</option>
+                                <option>(GMT-05:00) Eastern Time</option>
+                                <option>(GMT+00:00) UTC</option>
+                                <option>(GMT+01:00) Central European Time</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Date Format</label>
+                            <select class="form-control">
+                                <option>MM/DD/YYYY</option>
+                                <option>DD/MM/YYYY</option>
+                                <option>YYYY-MM-DD</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Connected Accounts Section -->
+            <section class="settings-section" id="connected">
+                <h2>Connected Accounts</h2>
+                <div class="settings-card">
+                    <div class="connected-accounts">
+                        <div class="account-item">
+                            <div class="account-info">
+                                <i class="fab fa-google"></i>
+                                <div>
+                                    <h3>Google</h3>
+                                    <p>Connected</p>
+                                </div>
+                            </div>
+                            <button class="btn-secondary">Disconnect</button>
+                        </div>
+                        <div class="account-item">
+                            <div class="account-info">
+                                <i class="fab fa-facebook"></i>
+                                <div>
+                                    <h3>Facebook</h3>
+                                    <p>Not Connected</p>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Connect</button>
+                        </div>
+                        <div class="account-item">
+                            <div class="account-info">
+                                <i class="fab fa-twitter"></i>
+                                <div>
+                                    <h3>Twitter</h3>
+                                    <p>Not Connected</p>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Billing & Subscription Section -->
+            <section class="settings-section" id="billing">
+                <h2>Billing & Subscription</h2>
+                <div class="settings-card">
+                    <div class="subscription-info">
+                        <div class="current-plan">
+                            <h3>Current Plan</h3>
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Free Plan</h4>
+                                    <span class="plan-badge">Current</span>
+                                </div>
+                                <ul class="plan-features">
+                                    <li><i class="fas fa-check"></i> Basic Features</li>
+                                    <li><i class="fas fa-check"></i> Standard Support</li>
+                                    <li><i class="fas fa-check"></i> 5GB Storage</li>
+                                </ul>
+                                <button class="btn-primary">Upgrade Plan</button>
+                            </div>
+                        </div>
+                        <div class="payment-methods">
+                            <h3>Payment Methods</h3>
+                            <div class="payment-list">
+                                <div class="payment-item">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <div class="payment-info">
+                                        <h4>Visa ending in 4242</h4>
+                                        <p>Expires 12/24</p>
+                                    </div>
+                                    <button class="btn-text">Remove</button>
+                                </div>
+                            </div>
+                            <button class="btn-secondary">
+                                <i class="fas fa-plus"></i>
+                                Add Payment Method
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/settings.js"></script>
+</body>
+</html> 

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorts - ConnectHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shorts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>ConnectHub</h1>
+        </div>
+        <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="shorts.html" class="active"><i class="fas fa-video"></i> Shorts</a>
+            <a href="blogs.html"><i class="fas fa-blog"></i> Blogs</a>
+            <a href="messages.html"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        <div class="nav-profile">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Profile" class="profile-pic">
+            <span class="username">John Doe</span>
+        </div>
+    </nav>
+
+    <div class="shorts-container">
+        <div class="shorts-sidebar">
+            <div class="create-short">
+                <button class="btn-primary" id="createShortBtn">
+                    <i class="fas fa-plus"></i>
+                    Create New Short
+                </button>
+            </div>
+            
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#" class="active">For You</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Following</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Sports</a></li>
+                </ul>
+            </div>
+
+            <div class="trending-topics">
+                <h3>Trending Topics</h3>
+                <div class="topic-tags">
+                    <span class="tag">#TechReview</span>
+                    <span class="tag">#TravelVlog</span>
+                    <span class="tag">#Foodie</span>
+                    <span class="tag">#MusicCover</span>
+                    <span class="tag">#SportsHighlights</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="shorts-feed">
+            <div class="feed-header">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search shorts...">
+                </div>
+                <div class="filter-options">
+                    <button class="active">Latest</button>
+                    <button>Popular</button>
+                    <button>Following</button>
+                </div>
+            </div>
+
+            <div class="shorts-grid">
+                <!-- Technology Shorts -->
+                <div class="short-card" data-category="technology">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=750&fit=crop" alt="AI Technology">
+                        <span class="duration">0:45</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>5 Mind-Blowing AI Features Coming in 2024</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 2.5M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 450K</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 12K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Author">
+                            <span>Tech Insights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cooking Shorts -->
+                <div class="short-card" data-category="food">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&h=750&fit=crop" alt="Cooking">
+                        <span class="duration">0:30</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Quick 5-Minute Pasta Recipe</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 1.8M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 320K</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 8.5K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Author">
+                            <span>Chef Sarah</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fitness Shorts -->
+                <div class="short-card" data-category="fitness">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&h=750&fit=crop" alt="Fitness">
+                        <span class="duration">0:40</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>10-Minute Full Body Workout</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 3.2M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 580K</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 15K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=150&h=150&fit=crop" alt="Author">
+                            <span>FitLife Coach</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Shorts -->
+                <div class="short-card" data-category="travel">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&h=750&fit=crop" alt="Travel">
+                        <span class="duration">0:35</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Hidden Gems in Bali</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 4.1M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 720K</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 25K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop" alt="Author">
+                            <span>Travel Diaries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Shorts -->
+                <div class="short-card" data-category="music">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&h=750&fit=crop" alt="Music">
+                        <span class="duration">0:50</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Piano Cover: Latest Pop Hit</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 5.6M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 890K</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 42K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Author">
+                            <span>Music Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIY Shorts -->
+                <div class="short-card" data-category="diy">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=750&fit=crop" alt="DIY">
+                        <span class="duration">0:55</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Easy Home Decoration Ideas</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 1.2M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 210K</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 5.8K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop" alt="Author">
+                            <span>DIY Master</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comedy Shorts -->
+                <div class="short-card" data-category="comedy">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=500&h=750&fit=crop" alt="Comedy">
+                        <span class="duration">0:25</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Daily Life Funny Moments</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 8.3M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 1.2M</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 65K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Author">
+                            <span>Comedy Central</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Shorts -->
+                <div class="short-card" data-category="education">
+                    <div class="short-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=750&fit=crop" alt="Education">
+                        <span class="duration">0:48</span>
+                        <div class="short-overlay">
+                            <button class="play-btn"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <h3>Quick Math Tricks</h3>
+                        <div class="short-meta">
+                            <span class="views"><i class="fas fa-eye"></i> 2.1M</span>
+                            <span class="likes"><i class="fas fa-heart"></i> 380K</span>
+                            <span class="comments"><i class="fas fa-comment"></i> 9.2K</span>
+                        </div>
+                        <div class="short-author">
+                            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=150&h=150&fit=crop" alt="Author">
+                            <span>Math Genius</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Short Modal -->
+    <div class="modal" id="createShortModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create New Short</h2>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="short-form">
+                <div class="form-group">
+                    <label for="shortTitle">Title</label>
+                    <input type="text" id="shortTitle" placeholder="Enter your short title" required>
+                </div>
+                <div class="form-group">
+                    <label for="shortVideo">Video</label>
+                    <input type="file" id="shortVideo" accept="video/*" required>
+                    <div class="video-preview"></div>
+                </div>
+                <div class="form-group">
+                    <label for="shortThumbnail">Thumbnail</label>
+                    <input type="file" id="shortThumbnail" accept="image/*" required>
+                    <div class="thumbnail-preview"></div>
+                </div>
+                <div class="form-group">
+                    <label for="shortDescription">Description</label>
+                    <textarea id="shortDescription" rows="3" placeholder="Add a description to your short..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="shortCategory">Category</label>
+                    <select id="shortCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="tech">Tech</option>
+                        <option value="travel">Travel</option>
+                        <option value="food">Food</option>
+                        <option value="music">Music</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="shortTags">Tags</label>
+                    <input type="text" id="shortTags" placeholder="Add tags separated by commas">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary">Save as Draft</button>
+                    <button type="submit" class="btn-primary">Publish</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/shorts.js"></script>
+</body>
+</html> 

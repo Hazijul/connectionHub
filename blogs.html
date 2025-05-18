@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - ConnectHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/blogs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>ConnectHub</h1>
+        </div>
+        <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="shorts.html"><i class="fas fa-video"></i> Shorts</a>
+            <a href="blogs.html" class="active"><i class="fas fa-blog"></i> Blogs</a>
+            <a href="messages.html"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        <div class="nav-profile">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Profile" class="profile-pic">
+            <span class="username">John Doe</span>
+        </div>
+    </nav>
+
+    <div class="blogs-container">
+        <div class="blogs-sidebar">
+            <div class="create-blog">
+                <button class="btn-primary">
+                    <i class="fas fa-plus"></i>
+                    Write a Blog
+                </button>
+            </div>
+            <div class="blog-categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-globe"></i> All</a></li>
+                    <li><a href="#"><i class="fas fa-plane"></i> Travel</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Food</a></li>
+                    <li><a href="#"><i class="fas fa-laptop"></i> Technology</a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i> Lifestyle</a></li>
+                    <li><a href="#"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                </ul>
+            </div>
+            <div class="trending-topics">
+                <h3>Trending Topics</h3>
+                <div class="topic-tags">
+                    <span class="tag">#Travel</span>
+                    <span class="tag">#Food</span>
+                    <span class="tag">#Technology</span>
+                    <span class="tag">#Lifestyle</span>
+                    <span class="tag">#Education</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogs-feed">
+            <div class="blog-filters">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search blogs...">
+                </div>
+                <div class="filter-options">
+                    <select>
+                        <option value="latest">Latest</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="trending">Trending</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="blogs-grid">
+                <!-- Sample Blog Posts -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=250&fit=crop" alt="Blog Image">
+                        <span class="category">Travel</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-header">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Author" class="profile-pic">
+                            <div class="blog-info">
+                                <h4>John Doe</h4>
+                                <span class="post-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <h3>Exploring the Hidden Gems of Southeast Asia</h3>
+                        <p>Discover the most beautiful and less-known destinations in Southeast Asia that will take your breath away...</p>
+                        <div class="blog-footer">
+                            <div class="blog-stats">
+                                <span><i class="fas fa-heart"></i> 1.2K</span>
+                                <span><i class="fas fa-comment"></i> 234</span>
+                                <span><i class="fas fa-bookmark"></i> 567</span>
+                            </div>
+                            <button class="read-more">Read More</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=250&fit=crop" alt="Blog Image">
+                        <span class="category">Food</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-header">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Author" class="profile-pic">
+                            <div class="blog-info">
+                                <h4>Jane Smith</h4>
+                                <span class="post-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <h3>10 Must-Try Street Foods Around the World</h3>
+                        <p>From spicy Thai noodles to Mexican tacos, explore the most delicious street foods that will make your taste buds dance...</p>
+                        <div class="blog-footer">
+                            <div class="blog-stats">
+                                <span><i class="fas fa-heart"></i> 2.5K</span>
+                                <span><i class="fas fa-comment"></i> 456</span>
+                                <span><i class="fas fa-bookmark"></i> 789</span>
+                            </div>
+                            <button class="read-more">Read More</button>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="blog-posts">
+                    <!-- Technology Category -->
+                    <div class="blog-post" data-category="technology">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&h=300&fit=crop" alt="AI Technology">
+                        <div class="blog-content">
+                            <span class="category">Technology</span>
+                            <h3>The Future of AI in Everyday Life</h3>
+                            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the coming years.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Sarah Chen</span>
+                                <span><i class="fas fa-calendar"></i> Mar 15, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post" data-category="technology">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&h=300&fit=crop" alt="Cybersecurity">
+                        <div class="blog-content">
+                            <span class="category">Technology</span>
+                            <h3>Essential Cybersecurity Practices for 2024</h3>
+                            <p>Learn about the latest security threats and how to protect your digital assets in an increasingly connected world.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Mike Johnson</span>
+                                <span><i class="fas fa-calendar"></i> Mar 14, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post" data-category="technology">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=300&fit=crop" alt="Web Development">
+                        <div class="blog-content">
+                            <span class="category">Technology</span>
+                            <h3>Modern Web Development Trends</h3>
+                            <p>Discover the latest frameworks, tools, and best practices shaping the future of web development.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Alex Rivera</span>
+                                <span><i class="fas fa-calendar"></i> Mar 13, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lifestyle Category -->
+                    <div class="blog-post" data-category="lifestyle">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=500&h=300&fit=crop" alt="Healthy Eating">
+                        <div class="blog-content">
+                            <span class="category">Lifestyle</span>
+                            <h3>Mindful Eating: A Path to Better Health</h3>
+                            <p>Understanding the connection between mindful eating practices and overall well-being.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Emma Wilson</span>
+                                <span><i class="fas fa-calendar"></i> Mar 15, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post" data-category="lifestyle">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&h=300&fit=crop" alt="Fitness">
+                        <div class="blog-content">
+                            <span class="category">Lifestyle</span>
+                            <h3>Home Workout Revolution</h3>
+                            <p>Effective fitness routines you can do at home without expensive equipment.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> David Park</span>
+                                <span><i class="fas fa-calendar"></i> Mar 14, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post" data-category="lifestyle">
+                        <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=500&h=300&fit=crop" alt="Mental Health">
+                        <div class="blog-content">
+                            <span class="category">Lifestyle</span>
+                            <h3>Digital Wellness in the Modern Age</h3>
+                            <p>Balancing technology use with mental health and personal well-being.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Lisa Chen</span>
+                                <span><i class="fas fa-calendar"></i> Mar 13, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Category -->
+                    <div class="blog-post" data-category="education">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&h=300&fit=crop" alt="Online Learning">
+                        <div class="blog-content">
+                            <span class="category">Education</span>
+                            <h3>The Rise of Online Learning Platforms</h3>
+                            <p>How digital education is reshaping traditional learning methods and making education more accessible.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Dr. James Wilson</span>
+                                <span><i class="fas fa-calendar"></i> Mar 15, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post" data-category="education">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&h=300&fit=crop" alt="Study Techniques">
+                        <div class="blog-content">
+                            <span class="category">Education</span>
+                            <h3>Effective Study Techniques for Success</h3>
+                            <p>Proven methods and strategies to enhance learning and retention in any subject.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Maria Garcia</span>
+                                <span><i class="fas fa-calendar"></i> Mar 14, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-post" data-category="education">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&h=300&fit=crop" alt="Career Development">
+                        <div class="blog-content">
+                            <span class="category">Education</span>
+                            <h3>Lifelong Learning: Key to Career Growth</h3>
+                            <p>Why continuous learning is essential in today's rapidly evolving job market.</p>
+                            <div class="blog-meta">
+                                <span><i class="fas fa-user"></i> Prof. Robert Brown</span>
+                                <span><i class="fas fa-calendar"></i> Mar 13, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Creation Modal -->
+    <div class="modal" id="createBlogModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Write a Blog</h2>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <form class="blog-form">
+                <div class="form-group">
+                    <label for="blogTitle">Title</label>
+                    <input type="text" id="blogTitle" placeholder="Enter your blog title" required>
+                </div>
+                <div class="form-group">
+                    <label for="blogCategory">Category</label>
+                    <select id="blogCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="travel">Travel</option>
+                        <option value="food">Food</option>
+                        <option value="technology">Technology</option>
+                        <option value="lifestyle">Lifestyle</option>
+                        <option value="education">Education</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="blogContent">Content</label>
+                    <textarea id="blogContent" rows="10" placeholder="Write your blog content here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="blogImage">Cover Image</label>
+                    <input type="file" id="blogImage" accept="image/*" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary">Save as Draft</button>
+                    <button type="submit" class="btn-primary">Publish</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/blogs.js"></script>
+</body>
+</html> 

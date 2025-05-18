@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - ConnectHub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/messages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>ConnectHub</h1>
+        </div>
+        <button class="mobile-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="shorts.html"><i class="fas fa-video"></i> Shorts</a>
+            <a href="blogs.html"><i class="fas fa-blog"></i> Blogs</a>
+            <a href="messages.html" class="active"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        <div class="nav-profile">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop" alt="Profile" class="profile-pic">
+            <span class="username">John Doe</span>
+        </div>
+    </nav>
+
+    <div class="messages-container">
+        <div class="conversations-sidebar">
+            <div class="messages-header">
+                <h2>Messages</h2>
+                <button class="new-message-btn">
+                    <i class="fas fa-plus"></i>
+                    New Message
+                </button>
+            </div>
+            <div class="search-messages">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search messages...">
+            </div>
+            <div class="conversations-list">
+                <div class="conversation active">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Sarah Wilson" class="profile-pic">
+                    <div class="conversation-info">
+                        <div class="conversation-header">
+                            <h4>Sarah Wilson</h4>
+                            <span class="time">2m ago</span>
+                        </div>
+                        <p class="last-message">Hey! How's the project coming along?</p>
+                    </div>
+                    <span class="unread-badge">2</span>
+                </div>
+                <div class="conversation">
+                    <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop" alt="Mike Johnson" class="profile-pic">
+                    <div class="conversation-info">
+                        <div class="conversation-header">
+                            <h4>Mike Johnson</h4>
+                            <span class="time">1h ago</span>
+                        </div>
+                        <p class="last-message">Let's catch up this weekend!</p>
+                    </div>
+                </div>
+                <div class="conversation">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop" alt="Emma Davis" class="profile-pic">
+                    <div class="conversation-info">
+                        <div class="conversation-header">
+                            <h4>Emma Davis</h4>
+                            <span class="time">3h ago</span>
+                        </div>
+                        <p class="last-message">Thanks for the help yesterday!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">
+                <div class="chat-user-info">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Sarah Wilson" class="profile-pic">
+                    <div>
+                        <h3>Sarah Wilson</h3>
+                        <span class="status online">Online</span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn"><i class="fas fa-phone"></i></button>
+                    <button class="action-btn"><i class="fas fa-video"></i></button>
+                    <button class="action-btn"><i class="fas fa-info-circle"></i></button>
+                </div>
+            </div>
+
+            <div class="messages-area">
+                <div class="message-date">Today</div>
+                <div class="message received">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Sarah Wilson" class="profile-pic">
+                    <div class="message-content">
+                        <p>Hey! How's the project coming along?</p>
+                        <span class="message-time">10:30 AM</span>
+                    </div>
+                </div>
+                <div class="message sent">
+                    <div class="message-content">
+                        <p>It's going great! I've finished the initial design phase.</p>
+                        <span class="message-time">10:32 AM</span>
+                    </div>
+                </div>
+                <div class="message received">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Sarah Wilson" class="profile-pic">
+                    <div class="message-content">
+                        <p>That's awesome! Can you share the mockups?</p>
+                        <span class="message-time">10:33 AM</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-input-area">
+                <button class="attachment-btn"><i class="fas fa-paperclip"></i></button>
+                <div class="message-input">
+                    <input type="text" placeholder="Type a message...">
+                    <button class="emoji-btn"><i class="far fa-smile"></i></button>
+                </div>
+                <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Message Modal -->
+    <div class="modal" id="newMessageModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>New Message</h2>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="search-users">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search users...">
+                </div>
+                <div class="users-list">
+                    <div class="user-item">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" alt="Sarah Wilson" class="profile-pic">
+                        <div class="user-info">
+                            <h4>Sarah Wilson</h4>
+                            <span class="status online">Online</span>
+                        </div>
+                    </div>
+                    <div class="user-item">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=150&h=150&fit=crop" alt="Mike Johnson" class="profile-pic">
+                        <div class="user-info">
+                            <h4>Mike Johnson</h4>
+                            <span class="status">Last seen 1h ago</span>
+                        </div>
+                    </div>
+                    <div class="user-item">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop" alt="Emma Davis" class="profile-pic">
+                        <div class="user-info">
+                            <h4>Emma Davis</h4>
+                            <span class="status">Last seen 3h ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/messages.js"></script>
+</body>
+</html>
